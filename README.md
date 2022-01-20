@@ -233,7 +233,7 @@ docker run -d --name myweb --link mysqldb1:db1  -p 9999:8080 docker.io/tomcat:7.
 
 #### 设置远程登录(Navicat)
 
-```sql
+```shell
 进入MySQL容器并登陆MySQL：  	docker exec -it mysql /bin/bash
 进行授权远程连接授权：			 GRANT ALL ON *.* TO 'root'@'%';
 刷新权限：					 flush privileges
